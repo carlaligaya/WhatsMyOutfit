@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_thumbnail"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type: "
+            android:id="@+id/tv_typetext"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_type"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@id/tv_typetext"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand: "
+            android:id="@+id/tv_brandtext"
+            android:layout_below="@id/tv_type"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_brand"
+            android:layout_below="@id/tv_type"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@id/tv_brandtext"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color: "
+            android:id="@+id/tv_colortext"
+            android:layout_below="@id/tv_brandtext"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_color"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tv_brand"
+            android:layout_toRightOf="@id/tv_colortext"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size: "
+            android:id="@+id/tv_sizetext"
+            android:layout_below="@id/tv_colortext"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_size"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tv_color"
+            android:layout_toRightOf="@id/tv_sizetext"/>
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Worn: "
+            android:id="@+id/tv_lastworntext"
+            android:layout_below="@id/tv_sizetext"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_last_worn"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tv_size"
+            android:layout_toRightOf="@id/tv_lastworntext"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

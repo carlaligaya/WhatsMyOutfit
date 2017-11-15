@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dlsu.mobidev.christopherjorge.whatsmyoutfit.EditItem">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:id="@+id/imgbtn_back"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/LinearLayout"
+        android:orientation="vertical"
+        android:layout_below="@+id/imgbtn_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/imgbtn_back"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/et_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Former Brand" />
+
+        <EditText
+            android:id="@+id/et_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_brand"
+            android:hint="Former Color" />
+
+        <EditText
+            android:id="@+id/et_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_color"
+            android:hint="Former Size" />
+
+        <EditText
+            android:id="@+id/et_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_size"
+            android:hint="Former Description" />
+
+        <RadioGroup
+            android:id="@+id/radioBs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/et_description">
+            <RadioButton android:id="@+id/radio_tops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tops"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_bottoms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bottoms"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_shoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shoes"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp" />
+
+</LinearLayout>
+</ScrollView>
